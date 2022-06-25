@@ -1,34 +1,35 @@
 <html>
     <head>
     <title>Study Hall</title>
-    <link rel="icon" href="/Final Project/Photos/Logo.jpg">
+    <link rel="icon" href="/Photos/Logo.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="nav.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
-    <link rel="stylesheet" href="/Final Project/css/movment.css">
-    <link rel="stylesheet" href="/Final Project/css/nav.css">
-    <link rel="stylesheet" href="/Final Project/css/form.css">
-    <link rel="stylesheet" href="/Final Project/Audio/MydNyte - Noir Et Blanc Vie.mp3">
-    <link rel="stylesheet" href="/Final Project/html/Contact.html">
-    <link rel="stylesheet" href="/Final Project/html/About.html">
-    <link rel="stylesheet" href="/Final Project/html/Home.html">
-    <link rel="stylesheet" href="/Final Project/Photos/8bitcity.gif">
+    <link rel="stylesheet" href="/css/movment.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/form.css">
+    <link rel="stylesheet" href="/Audio/MydNyte - Noir Et Blanc Vie.mp3">
+    <link rel="stylesheet" href="/html/Contact.html">
+    <link rel="stylesheet" href="/html/About.html">
+    <link rel="stylesheet" href="/html/index.html">
+    <link rel="stylesheet" href="/Photos/8bitcity.gif">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
-    <link rel="stylesheet" href="/Final Project/Music/music.css">
+    <link rel="stylesheet" href="/Music/music.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Fascinate&family=Press+Start+2P&family=Tiro+Kannada&display=swap">
-    <link rel="stylesheet" href="/Final Project/Photos/Logo.jpg">
-    <link rel="stylesheet" href="/Final Project/music/ukulele.mp3">
-    <link rel="stylesheet" href="/Final Project/music/MydNyte.mp3">
+    <link rel="stylesheet" href="/Photos/Logo.jpg">
+    <link rel="stylesheet" href="/music/ukulele.mp3">
+    <link rel="stylesheet" href="/music/MydNyte.mp3">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/Final Project/css/social.css">
+    <link rel="stylesheet" href="/css/social.css">
+    <link rel="stylesheet" href="/css/CForm.sass">
  <style>
 
 
 
 
-body {background-image: url("/Final Project/Photos/8bitcity.gif");
+body {background-image: url("/Photos/Gd1.gif");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Dancing Script', cursive;
@@ -39,45 +40,65 @@ body {background-image: url("/Final Project/Photos/8bitcity.gif");
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
+ overflow: hidden;
 }
 
- #start { font-family: 'Press Start 2P', cursive;
+ #start2 { font-family: 'Press Start 2P', cursive; color: black;
  }
 
- #pretty {font-family: 'Fascinate', cursive;}
 
-
- .hero-content {
+ .hero2-content {
     position: relative; 
-    color: white;
     margin: 0.6rem;
-    top: 350;
+    mix-blend-mode: exclusion;
+    top: 125;
+  left: auto;}
+    
+:root {
+    color-scheme: light dark;
+    --special-text-color: hsla(60, 100%, 50%, 0.5);
+    --border-color: black;}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --special-text-color: hsla(60, 50%, 70%, 0.75);
+        --border-color: white;
+    }
 }
-.hero-title {
+
+.special {
+    color: var(--special-text-color);
+    border: 1px solid var(--border-color);
+}
+    
+
+
+.hero2-title {
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 10;
-    margin-top: 20;
+    margin-bottom: 0;
+    margin-top: 0;
    
 }
-.hero-subtitle {
+.hero2-subtitle {
     font-size: 2rem;
     font-weight: 200;
     margin-top: 1rem;
 }
  
 
-  .floating {
+
+
+  .floating2 {
 	animation-name: floating;
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
 	margin-left: 30px;
-	margin-top: 4px;
+	margin-top: 0px;
 }
 
-@keyframes floating {
+@keyframes floating2 {
 	0% { transform: translate(0, 0px); }
 	50% { transform: translate(0, 15px); }
 	100% { transform: translate(0, -0px); }
@@ -106,7 +127,7 @@ footer{
       <div class="nav__content bd-grid">
         <a href="" class="nav__perfil">
           <div class="nav__img">
-           <img src="/Final Project/Photos/Logo.jpg"> 
+           <img src="/Photos/Logo.jpg"> 
           </div>
           <div>
           
@@ -114,11 +135,11 @@ footer{
         </a>
         <div class="nav__menu">
           <ul class="nav__list">
-            <li class="nav__item"><a href="/Final Project/html/Home.html" class="nav__link active">Home</a></li>
+            <li class="nav__item"><a href="/html/index.html" class="nav__link active">Home</a></li>
             <li class="nav__item dropdown">
               <a class="nav__link dropdown__link">About <i class='bx bx-chevron-down dropdown__icon'></i></a>
               <ul class="dropdown__menu">
-                <li class="dropdown__item"><a href="/Final Project/html/About.html" >About me</a></li>
+                <li class="dropdown__item"><a href="/html/About.html" >About me</a></li>
                 <li class="dropdown__item"><a href="#" class="nav__link">Location</a></li>
                 <li class="dropdown__item"><a href="#" class="nav__link">Wait List</a></li>
               </ul>
@@ -132,7 +153,7 @@ footer{
                 <li class="dropdown__item"><a href="#" class="nav__link">Night</a></li>
               </ul>
             </li>
-            <li class="nav__item"><a href="/Final Project/html/Contact.html" class="nav__link">Contact</a></li>
+            <li class="nav__item"><a href="/html/Contact.html" class="nav__link">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -141,54 +162,30 @@ footer{
 
   <div>
   
-   <h1 style="font-size:70px " class="floating hero-content " id="start">Study Hall</h1>
+   <h1 style="font: size 20vh; " class="floating2 hero2-content " id="start2" text="(prefers-color-scheme: dark)">Contact Me</h1>
     
-
-  </div>
-    </div>
   </div>
 
-
-<player>
-  <div class="music-container2 floating" id="music-container2">
-    <div class="music-info2">
-      <h4 id="title"></h4>
-      <div class="progress-container2" id="progress-container2">
-        <div class="progress2" id="progress2"></div>
-      </div>
+  
+   <div class="contact-us">
+    <form >
+      <input placeholder="Name" />
+      <input name="customerEmail" placeholder="Email" type="email" />
+      <input name="customerPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone" type="tel" />
+      <button type="button">SIGN UP</button>
+    </form>
     </div>
 
-    <audio loop src="/Final Project/music/MydNyte.mp3">
 
-    </audio>
-
-    <div class="img-container2">
-      <img src="/images/Human.jpg" alt="music-cover2" id="cover">
-    </div>
-    <div class="navigation2">
-      <button id="prev" class="action-btn2">
-        <i class="fas fa-backward"></i>
-      </button>
-      <button id="play" class="action-btn2 action-btn-big2">
-        <i class="fas fa-play"></i>
-      </button>
-      <button id="next" class="action-btn2">
-        <i class="fas fa-forward"></i>
-      </button>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-
-
-  <div class="wrapper footer">
+   <div class="wrapper footer">
     <ul>
       <li class="facebook"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
       <li class="twitter"><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
       <li class="instagram"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
       <li class="google"><a href="#"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a></li>
     </ul>
-  </div>
-</player>
+   </div>
+
+   
     </body>
     </html>
